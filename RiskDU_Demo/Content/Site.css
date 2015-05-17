@@ -192,4 +192,6 @@ padding-left:90px;
   .navbar-default .badge {
   background-color: red;
   color: #fff;
+    top: -13px;
+    left: -5px;
 }

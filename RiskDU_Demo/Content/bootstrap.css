@@ -6830,13 +6830,7 @@ a.list-group-item-danger.active:focus {
 }
 
 
-.badge-notify{
 
-    background-color:red;
-    position:relative;
-    top: -13px;
-    left: -5px;
-}
 
 
 /*.timeline {
