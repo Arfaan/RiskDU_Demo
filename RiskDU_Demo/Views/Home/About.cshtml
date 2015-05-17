@@ -1,0 +1,227 @@
+﻿@{
+    //ViewBag.Title = "About";
+}
+@*<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>*@
+
+
+
+<div class="container">
+
+    <div class="page-header">
+        <h3 id="timeline">Contract Workflow Timeline</h3>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">Panel heading</div>
+        <div class="panel-body">
+            <form class="form-horizontal">
+                <fieldset>
+                    <h4>Next Action: Coverholder Approval</h4>
+
+                    <div class="form-group">
+                        <label class="col-lg-2 control-label">Radios</label>
+                        <div class="col-lg-10">
+                            <div class="radio">
+                                <label>
+                                    <input name="optionsRadios" id="optionsRadios1" type="radio" checked="" value="option1">
+                                    Option one is this
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input name="optionsRadios" id="optionsRadios2" type="radio" value="option2">
+                                    Option two can be something else
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-2 control-label" for="select">Selects</label>
+                        <div class="col-lg-10">
+                            <select class="form-control" id="select">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-10 col-lg-offset-2">
+                            <button class="btn btn-default" type="reset">Cancel</button>
+                            <button class="btn btn-primary" type="submit">Submit</button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+
+        </div>
+    </div>
+
+
+
+
+
+    <ul class="timeline">
+        <li>
+            <div class="timeline-badge"><i class="glyphicon glyphicon-comment"></i></div>
+            <div class="timeline-panel" style="background-color:aliceblue;">
+                <div class="timeline-heading">
+                    <h4 class="timeline-title">Compliance Note</h4>
+                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>Compliance Apr 11 2014 11.02</small></p>
+
+                </div>
+                <div class="timeline-body">
+                    <p>
+                        We do understand your fustration with the process, but as you know with the new Lloyds requirment ByLaw DUA102, we have to be certain the the coverholder is fit and proper to coduct business on our behalf.
+                    </p>
+                </div>
+            </div>
+        </li>
+        <li class="timeline-inverted">
+            <div class="timeline-badge info"><i class="glyphicon glyphicon-comment"></i></div>
+            <div class="timeline-panel" style="background-color:aliceblue;">
+                <div class="timeline-heading">
+                    <h4 class="timeline-title">Underwriter Note</h4>
+                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>Dan Jansz Apr 11 2014 11.02</small></p>
+                </div>
+                <div class="timeline-body">
+                    <p>I have been waiting for the coverholder approval to be completed for 3 months. The business is good and the broker is waiting for feedback.</p>
+
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="timeline-badge warning"><i class="glyphicon glyphicon-flag"></i></div>
+            <div class="timeline-panel">
+                <div class="timeline-heading">
+                    <h4 class="timeline-title">Decision: ASML To Lead? </h4>
+                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>Dan Jansz Apr 11 2014 11.02</small></p>
+                </div>
+                <div class="timeline-body">
+                    <div class="timeline-body">
+                        <p><span class="text-info">Decision: Yes</span></p>
+                        <p>Leader Name:Argenta Syndicate Management</p>
+                    </div><hr>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">
+                            <i class="glyphicon glyphicon-cog"></i> <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Change Decision</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="timeline-inverted" >
+            <div class="timeline-panel" >
+                <div class="timeline-heading">
+                    <h4 class="timeline-title">Decision: ASML To Lead? </h4>
+                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>Dan Jansz Apr 11 2014 11.02</small></p>
+                </div>
+                <div class="timeline-body">
+                    <div class="timeline-body">
+                        <p><span class="text-info">Decision: Yes</span></p>
+                        <p>Leader Name:Argenta Syndicate Management</p>
+                    </div><hr>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">
+                            <i class="glyphicon glyphicon-cog"></i> <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Change Decision</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="timeline-inverted">
+            <div class="timeline-badge"><i class="glyphicon glyphicon-comment"></i></div>
+            <div class="timeline-panel" style="background-color:aliceblue;">
+                <div class="timeline-heading">
+                    <h4 class="timeline-title">UW Management</h4>
+                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>UW Managment Apr 11 2014 11.02</small></p>
+                </div>
+                <div class="timeline-body">
+                    <p>Dan, Proceed with this one to the next stage. We have lead on similar contracts in the past, and business was good</p>
+
+                </div>
+            </div>
+        </li>
+        <li class="timeline-inverted">
+            <div class="timeline-badge"><i class="glyphicon glyphicon-comment"></i></div>
+            <div class="timeline-panel" style="background-color:aliceblue;">
+                <div class="timeline-heading">
+                    <h4 class="timeline-title">Underwriter Note</h4>
+                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>Dan Jansz Apr 11 2014 11.02</small></p>
+                </div>
+                <div class="timeline-body">
+                    <p>Waiting on Management team regarding decision to </p>
+
+                </div>
+            </div>
+        </li>
+
+        <li>
+            <div class="timeline-badge success"><i class="glyphicon glyphicon-ok"></i></div>
+            
+            <div class="timeline-panel">
+                <div class="timeline-heading">
+                    <h4 class="timeline-title">Decision: Through Broker?</h4>
+                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>Dan Jansz Apr 11 2014 11.02</small></p>
+                </div>
+                <div class="timeline-body">
+                    <div class="timeline-body">
+                        <p><span class="text-info">Decision: Yes</span></p>
+                        <p>Broker Name:Willis Brokers USA</p>
+                        <p>Broker Code: 867</p>
+                    </div><hr>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">
+                            <i class="glyphicon glyphicon-cog"></i> <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Change Decision</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+
+            <div class="timeline-panel">
+                <div class="timeline-heading">
+                    <h4 class="timeline-title">Entered Coverholder/Contract Details</h4>
+                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>Dan Jansz Apr 11 2014 10.39</small></p>
+                </div>
+                <div class="timeline-body">
+                   <p>Name<strong >Channel Island Underwriting</strong></p>
+                    <p>Trading Name <strong>John Miller Underwriting</strong></p>
+                    <p>Coverholder <strong>99PUK</strong></p>
+                </div>
+            </div>
+        </li>
+        <li class="timeline-inverted">
+            <div class="timeline-badge success"><i class="glyphicon glyphicon-ok"></i></div>
+            <div class="timeline-panel">
+                <div class="timeline-heading">
+                    <h4 class="timeline-title">New Delegated Underwriting Opportunity</h4>
+                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>Dan Jansz Apr 11 2014 10.33</small></p>
+                </div>
+                <div class="timeline-body">
+                    <p>New Opportunity in the Channel Island to do business with the 'Channel Island Underwriting' group. He talks of high return and shows book with great return on exposure. </p>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
