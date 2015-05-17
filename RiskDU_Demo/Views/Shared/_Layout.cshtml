@@ -27,8 +27,16 @@
                         <li>@Html.ActionLink("Workflow", "About", "Home")</li>
                         <li>@Html.ActionLink("Detail", "Contact", "Home")</li>
                         <li>@Html.ActionLink("Coverholder", "Coverholder", "Home")</li>
+                        <li><a><i class="glyphicon glyphicon-comment"></i><div class="badge badge-notify">2</div></a></li>
                     </ul>
-                    @Html.Partial("_LoginPartial")
+                 
+                    <form class="navbar-form navbar-right">
+                        <div >
+                            <input type="text" ng-model="query" class="input-medium search-query" placeholder="Search">
+                            <a class="btn btn-group-sm"><i class="glyphicon glyphicon-search"></i></a>
+                            
+                        </div>
+                    </form>
                 </div>
             </div>
     </div>

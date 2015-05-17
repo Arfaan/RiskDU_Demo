@@ -6582,8 +6582,8 @@ button.close {
   border-width: 0;
 }
 .navbar-default .badge {
-  background-color: #fff;
-  color: #2c3e50;
+  background-color: red;
+  color: #fff;
 }
 .navbar-inverse .badge {
   background-color: #fff;
@@ -6830,6 +6830,15 @@ a.list-group-item-danger.active:focus {
 }
 .popover {
   color: #2c3e50;
+}
+
+
+.badge-notify{
+
+    background-color:red;
+    position:relative;
+    top: -13px;
+    left: -5px;
 }
 
 
