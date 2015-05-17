@@ -1,0 +1,309 @@
+﻿
+@{
+    ViewBag.Title = "Coverholder";
+}
+
+<div class="page-header">
+    <h3 id="timeline">Coverholder Detail</h3>
+</div>
+
+
+   <!--Load the AJAX API-->
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript">
+
+    // Load the Visualization API and the piechart package.
+    google.load('visualization', '1.0', { 'packages': ['corechart'] });
+
+    // Set a callback to run when the Google Visualization API is loaded.
+    google.setOnLoadCallback(drawChart);
+
+    // Callback that creates and populates a data table,
+    // instantiates the pie chart, passes in the data and
+    // draws it.
+    function drawChart() {
+
+        // Create the data table.
+        var data = google.visualization.arrayToDataTable([
+          ['Element', 'GBP(£)', { role: 'style' }],
+          ['GNWP(£)', 8.94, '#3498db'],            // RGB value
+          ['Signed(£)', 10.49, '#f39c12'],            // English color name
+          ['Incurred(£)', 19.30, '#e74c3c'],
+          ['Paid(£)', 21.45, 'color: #18bc9c'], // CSS-style declaration
+        ]);
+
+
+        // Set chart options
+        var options = {
+            
+            'width': 400,
+            'height': 300
+        };
+
+        // Instantiate and draw our chart, passing in some options.
+        var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+    }
+</script>
+  </head>
+
+<body>
+    <!--Div that will hold the pie chart-->
+   
+
+
+
+<div class="panel panel-default">
+    <div class="panel-heading">Claim</div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-7">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Field</th>
+                                <th>Value</th>
+                                <th>Field</th>
+                                <th>Value</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong> Reference</strong></td>
+                                <td>P105815114</td>
+                                <td><strong>Period From</strong></td>
+                                <td>01/04/2015</td>
+
+                            </tr>
+                            <tr>
+                                <td><strong>Insured</strong></td>
+                                <td>TOKIO MARINE</td>
+                                <td><strong>Period To</strong></td>
+                                <td>01/04/2016</td>
+
+                            </tr>
+                            <tr>
+                                <td><strong>Underwriter</strong></td>
+                                <td>SJW</td>
+                                <td><strong>Limit</strong></td>
+                                <td>275,000,000</td>
+
+                            </tr>
+                            <tr>
+                                <td><strong>Broker</strong></td>
+                                <td>Willis Limited</td>
+                                <td><strong>Deductible</strong></td>
+                                <td>1,000,000</td>
+
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-5">
+
+                <div id="chart_div"></div>
+
+
+
+
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">Coverholder Notes</div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-12">
+                <p><large class="text-muted">General </large></p>
+                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>Compliance Apr 11 2014 11.02</small></p>
+                <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork.</p>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <p><large class="text-muted">General</large></p>
+                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>Compliance Apr 11 2014 11.02</small></p>
+                <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork.</p>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">Underwriter Notes</div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-12">
+                <p><large class="text-muted">Renewal Note </large></p>
+                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>Compliance Apr 11 2014 11.02</small></p>
+                <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork.</p>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <p><large class="text-muted">General Note </large></p>
+                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>Compliance Apr 11 2014 11.02</small></p>
+                <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork.</p>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+@*<div class="panel panel-default">
+        <div class="panel-heading">Claim</div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-3"><strong>Field</strong></div>
+                <div class="col-md-3"><strong>Value</strong></div>
+                <div class="col-md-3"><strong>Field</strong></div>
+                <div class="col-md-3"><strong>Value</strong></div>
+            </div>
+            <div class="row">
+
+                <div class="col-md-3">
+                    <strong> Reference</strong>
+                </div>
+                <div class="col-md-3">
+                    P105815114
+                </div>
+                <div class="col-md-3">
+                    <strong>Period From</strong>
+                </div>
+                <div class="col-md-3">
+                    01/04/2015
+                </div>
+            </div>
+            <div class="row">
+
+
+                <div class="col-md-3">
+                    <strong>Insured</strong>
+                </div>
+                <div class="col-md-3">
+                    TOKIO MARINE
+                </div>
+                <div class="col-md-3">
+                    <strong>Period To</strong>
+                </div>
+                <div class="col-md-3">
+                    01/04/2016
+                </div>
+            </div>
+            <div class="row">
+
+
+                <div class="col-md-3">
+                    <strong>Broker</strong>
+                </div>
+                <div class="col-md-3">
+                    Willis Limited
+                </div>
+                <div class="col-md-3">
+                    <strong>Deductible</strong>
+                </div>
+                <div class="col-md-3">
+                    1,000,000
+                </div>
+            </div>
+        </div>
+    </div>*@
+
+
+
+
+
+
+
+
+
+
+
+
+@*<div class="row">
+        <div class="col-md-1 info"><strong>Field</strong></div>
+        <div class="col-md-1"><strong>2015</strong></div>
+        <div class="col-md-1"><strong>2014</strong></div>
+        <div class="col-md-1"><strong>2013</strong></div>
+        <div class="col-md-1"><strong>2012</strong></div>
+        <div class="col-md-1"><strong>2011</strong></div>
+        <div class="col-md-1"><strong>2010</strong></div>
+        <div class="col-md-1"><strong>2009</strong></div>
+        <div class="col-md-1"><strong>2008</strong></div>
+        <div class="col-md-1"><strong>2007</strong></div>
+        <div class="col-md-1"><strong>2006</strong></div>
+        <div class="col-md-1"><strong>2005</strong></div>
+    </div>
+    <div class="row">
+        <div class="col-md-1"><strong>GNWP(£)</strong></div>
+        <div class="col-md-1">1,000,000</div>
+        <div class="col-md-1">800,020</div>
+        <div class="col-md-1">800,000</div>
+        <div class="col-md-1">640,000</div>
+        <div class="col-md-1">800,000</div>
+        <div class="col-md-1">800,000</div>
+        <div class="col-md-1">800,000</div>
+        <div class="col-md-1">800,000</div>
+        <div class="col-md-1">800,000</div>
+        <div class="col-md-1">800,000</div>
+        <div class="col-md-1">800,000</div>
+    </div>
+    <div class="row">
+        <div class="col-md-1"><strong>Signed(£)</strong></div>
+        <div class="col-md-1">1,000,000</div>
+        <div class="col-md-1">800,020</div>
+        <div class="col-md-1">800,000</div>
+        <div class="col-md-1">640,000</div>
+        <div class="col-md-1">800,000</div>
+        <div class="col-md-1">800,000</div>
+        <div class="col-md-1">800,000</div>
+        <div class="col-md-1">800,000</div>
+        <div class="col-md-1">800,000</div>
+        <div class="col-md-1">800,000</div>
+        <div class="col-md-1">800,000</div>
+    </div>
+    <div class="row">
+        <div class="col-md-1"><strong>Incurred(£)</strong></div>
+        <div class="col-md-1">1,000,000</div>
+        <div class="col-md-1">800,020</div>
+        <div class="col-md-1">800,000</div>
+        <div class="col-md-1">640,000</div>
+        <div class="col-md-1">800,000</div>
+        <div class="col-md-1">800,000</div>
+        <div class="col-md-1">800,000</div>
+        <div class="col-md-1">800,000</div>
+        <div class="col-md-1">800,000</div>
+        <div class="col-md-1">800,000</div>
+        <div class="col-md-1">800,000</div>
+    </div>
+    <div class="row">
+        <div class="col-md-1"><strong>Paid(£)</strong></div>
+        <div class="col-md-1">1,000,000</div>
+        <div class="col-md-1">800,020</div>
+        <div class="col-md-1">800,000</div>
+        <div class="col-md-1">640,000</div>
+        <div class="col-md-1">800,000</div>
+        <div class="col-md-1">800,000</div>
+        <div class="col-md-1">800,000</div>
+        <div class="col-md-1">800,000</div>
+        <div class="col-md-1">800,000</div>
+        <div class="col-md-1">800,000</div>
+        <div class="col-md-1">800,000</div>
+    </div>*@

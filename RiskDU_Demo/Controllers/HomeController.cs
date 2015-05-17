@@ -26,5 +26,12 @@ namespace RiskDU_Demo.Controllers
 
             return View();
         }
+
+        public ActionResult Coverholder()
+        {
+            ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
     }
 }
