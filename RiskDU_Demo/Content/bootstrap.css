@@ -6581,10 +6581,7 @@ button.close {
 .navbar {
   border-width: 0;
 }
-.navbar-default .badge {
-  background-color: red;
-  color: #fff;
-}
+
 .navbar-inverse .badge {
   background-color: #fff;
   color: #18bc9c;
